@@ -1,0 +1,314 @@
+@font-face {
+    font-family: "Grunge";
+    src: url(../font/Grunge-Social-Media.ttf);
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Icons Outlined';
+    font-size: 36px;
+    margin: 0 20px;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    height: 100vh; 
+    background: url('../medios/fotos/wp1979000-the-neighbourhood-wallpapers.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulos {
+    text-align: center;
+}
+
+#titulos h1 {
+    margin: 0;
+    padding: 0.5em 0;
+    font-size: 3em; 
+}
+
+#titulos h3 {
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+nav {
+    position: absolute; 
+    bottom: 0; 
+    width: 100%;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 40px 0; 
+    box-sizing: border-box; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px; 
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.biografia {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+}
+
+.left, .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.left img {
+    max-width: 80%; 
+    height: auto;
+}
+
+.right {
+    padding: 40px;
+}
+
+.right p {
+    font-size: 1.2em;
+    text-align: justify;
+    color: #000; 
+}
+
+/*  
+#section2{
+    background-image: radial-gradient(circle at 14.8% 50%, #7f6984 0, #5a505f 25%, #363537 50%, #181b11 75%, #000000 100%);
+}
+*/
+.icons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; 
+}
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 100px; 
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Icons Outlined';
+    font-size: 36px;
+    margin: 0 30px; 
+    color: black; 
+}
+
+.icon-item p {
+    margin-top: 5px; 
+    color: black; 
+}
+
+.icons-container p {
+    margin-top: 10px; 
+    color: black; 
+    overflow: hidden; 
+    text-align: justify; 
+    width: 250px; /* Ancho máximo para el contenedor del texto */
+}
+   
+.albums {
+    background-image: url('../medios/fotos/nbhd3.jpg');
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.albums h2 {
+    font-size: 3em;
+}
+
+.portadas {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.portadas h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.portadas p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.imagenes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.imagenes-container img {
+    width: 300px;
+    height: 300px; 
+    object-fit: cover; 
+}
+
+.mapa {
+    background-image: url('../medios/fotos/nbhd3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    
+}
+
+.mapa h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#mapa {
+    width: 80%;
+    height: 500px;
+    border: none;
+}
+
+
+.info {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+
+.info-left, .info-center, .info-right {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.info-left {
+    justify-content: flex-start; 
+}
+
+
+.info-right {
+    justify-content: flex-start; 
+    text-align: left; 
+    
+}
+
+.info-right h2 {
+    margin: 0;
+    text-align: left; 
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+}
+
+
+#rs, #derechos{
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 50px;
+
+  }
+
+  #rs a{
+    font-family: Grunge, cursive;
+    padding-top: 30px;
+}
+
+/* Estilo para los íconos de redes sociales */
+
+
+
+.icono1, .icono2, .icono3 {
+    font-size: 48px; /* Aumenta el tamaño de los iconos */
+    color: #fff;
+    margin: 20px 0; /* Ajusta el margen superior e inferior para separar los iconos */
+    padding-top: 20%; /* Aumenta el padding superior para más separación vertical */
+    margin-left: 100px;
+    transform: translate(-10%, -40%);
+}
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%; 
+}
+
+table td {
+    padding: 30px;
+    border: none; 
+}
+
+.info-right h2 {
+    margin: 0;
+}
+
+
+#derechos {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    font-size: 12px; 
+    color: #fff; 
+}
+
+
